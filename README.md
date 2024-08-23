@@ -49,7 +49,7 @@ To make the most of this repository, you'll need to ensure that GitHub Actions h
 
 ## Why This Approach?
 
-This repository is inspired by [rmordasiewicz's approach](https://github.com/rmordasiewicz). The key idea is to separate content from design and automation. By centralizing content in `resume.json` and automating the generation process, we reduce the need for technical knowledge and make collaboration more accessible.
+This repository is inspired by [rmordasiewicz](https://github.com/rmordasiewicz)'s approach. The key idea is to separate content from design and automation. By centralizing content in `resume.json` and automating the generation process, we reduce the need for technical knowledge and make collaboration more accessible.
 
 - **Focus on Content**: Spend less time on technical details and more time perfecting the content of your resume.
 - **Consistency**: Ensure that all themed resumes are consistently updated with the latest information.
