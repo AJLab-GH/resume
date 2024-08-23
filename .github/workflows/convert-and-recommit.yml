@@ -1,0 +1,58 @@
+name: Generate and Commit Resumes
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  generate-resumes:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '20'
+
+      - name: Update npm
+        run: npm install -g npm@latest
+
+      - name: Install resume-cli
+        run: npm install -g resume-cli
+
+      - name: Generate Resumes
+        run: |
+          mkdir -p outputs/pdf outputs/html
+          jq -r 'keys[]' themes.json | while read i; do
+            echo "Installing theme: jsonresume-theme-${i}"
+            npm install jsonresume-theme-${i}
+
+            echo "Exporting PDF resume with theme: jsonresume-theme-${i}"
+            npx resume export outputs/pdf/Robin-Mordasiewicz-${i}.pdf --theme jsonresume-theme-${i} --format pdf --no-sandbox resume.json
+
+            echo "Exporting HTML resume with theme: jsonresume-theme-${i}"
+            npx resume export outputs/html/Robin-Mordasiewicz-${i}.html --theme jsonresume-theme-${i} --format html resume.json
+          done
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+
+      - name: Commit and Push Resumes
+        run: |
+          git add outputs/pdf/*.pdf outputs/html/*.html
+          git commit -m "Update resumes with the latest themes"
+          git push
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

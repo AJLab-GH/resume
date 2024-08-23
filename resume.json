@@ -1,0 +1,308 @@
+{
+  "$schema": "https://raw.githubusercontent.com/jsonresume/resume-schema/v1.0.0/schema.json",
+  "basics": {
+    "name": "Alexandre Jammes",
+    "label": "Cloud Architect",
+    "image": "https://gravatar.com/avatar/suitpleasantbb48653437.jpg&size=200",
+    "email": "ajammes.ftnt@gmail.com",
+    "phone": "(613) 889-6564",
+    "url": "https://registry.jsonresume.org/robinmordasiewicz",
+    "summary": "Senior Cloud Solutions Architect focused on all aspects of Cloud Security.",
+    "location": {
+      "address": "26 Margueretta St.",
+      "postalCode": "M6K2P4",
+      "city": "Toronto",
+      "countryCode": "CA",
+      "region": "Ontario"
+    },
+    "profiles": [
+      {
+        "network": "LinkedIn",
+        "username": "robin-mordasiewicz",
+        "url": "https://www.linkedin.com/in/robin-mordasiewicz/"
+      },
+      {
+        "network": "Facebook",
+        "username": "robin.mordasiewicz",
+        "url": "https://www.facebook.com/robin.mordasiewicz"
+      },
+      {
+        "network": "YouTube",
+        "username": "robinmordasiewicz",
+        "url": "https://www.youtube.com/channel/UCc2rQTQp22P2WEhCArzlUoQ"
+      },
+      {
+        "network": "GitHub",
+        "username": "robinmordasiewicz",
+        "url": "https://github.com/robinmordasiewicz"
+      }
+    ]
+  },
+  "work": [
+    {
+      "name": "F5 Inc.",
+      "location": "801 5th Ave Seattle, WA 98104",
+      "description": "F5 Distributed Cloud Services are SaaS-based security, networking, and application management services that enable customers to deploy, s  ecure, and operate their applications in a cloud-native environment wherever needed–data center, multi-cloud, or the network or enterprise edge.",
+      "position": "Cloud Solutions Engineer",
+      "url": "https://www.f5.com",
+      "endDate": "2023-05-01",
+      "startDate": "2021-05-01",
+      "summary": "Solution selling, focusing on F5 Distributed Cloud, positioning multi-cloud networking, application security and kubernetes based pipelines. In the SME overlay role I was responsible for account discovery, product presentations, demonstrations, and proof of concept, including automation with terraform across multiple clouds with on-prem datacenters. In the cloud overlay team I was responsible for architecting CICD pipeline integrations including github-actions, docker containers, argocd, jenkins, nginx ingress controller. Cloud based Web Application Firewalls, API protections, and networking application delivery with GSLB as well as anycast architectures.",
+      "highlights": [
+        "Covering financial services in North America",
+        "Multi Cloud Networking",
+        "Cloud Automation with Terraform",
+        "Web App and API Protection"
+      ]
+    },
+    {
+      "name": "F5 Inc.",
+      "location": "801 5th Ave Seattle, WA 98104",
+      "description": "",
+      "position": "Technical Marketing Manager - Service Providers",
+      "url": "https://www.f5.com",
+      "endDate": "2021-05-01",
+      "startDate": "2020-07-01",
+      "summary": "Authoring, and publishing technical documentation supporting service providers technology in OpenShift.",
+      "highlights": [
+        "Authoring Technical Documentation",
+        "Content As Code",
+        "Restructured Text",
+        "Containerized Content Publishing"
+      ]
+    },
+    {
+      "name": "F5 Inc.",
+      "location": "801 5th Ave Seattle, WA 98104",
+      "description": "Enterprise Application Delivery and Security, including Web Application Firewalls, and Datacenter firewalls",
+      "position": "Senior Solutions Engineer - Enterprise Commercial",
+      "url": "https://www.f5.com",
+      "endDate": "2020-07-01",
+      "startDate": "2018-07-01",
+      "summary": "Working with large enterprise customers in the Greater Toronto Area to help architect hybrid cloud architecture using F5 technology. Team collaboration, presenting technical labs and product demonstration in online webinar format as well as large in-person group events.",
+      "highlights": [
+        "Enterprise Commercial",
+        "Hybrid Cloud Architecture",
+        "Devops",
+        "Automation with Ansible",
+        "Web Appplication Firewall",
+        "VPN",
+        "iRules"
+      ]
+    },
+    {
+      "name": "F5 Inc.",
+      "location": "801 5th Ave Seattle, WA 98104",
+      "description": "F5 BIG-IP Next CNFs enable a cloud-native solution that is secure, automated, and scalable, critical for the transition to 5G networks.",
+      "position": "Field Sales Engineer - Service Providers",
+      "url": "https://www.f5.com",
+      "endDate": "2018-07-01",
+      "startDate": "2014-06-01",
+      "summary": "Solution selling for Canadian Service Providers I have experience with carrier grade firewalls, wireline services, web application firewalls, and application delivery at scale. Architecting carrier-grade-NAT for mobility networks, architecting inspection platform enabling multi-vendor security chains including DLP/NGWF/IDS for connected car, connected city, and large IoT networks. Deploying massive distributed VPN platforms.",
+      "highlights": [
+        "Service Providers",
+        "CGNAT",
+        "IoT Security Chaining",
+        "OpenStack",
+        "OpenShift",
+        "Web Appplication Firewall",
+        "DLP"
+      ]
+    },
+    {
+      "name": "Scalar Decisions",
+      "location": "1 Toronto St, Toronto, ON M5C 2V6",
+      "description": "Canada’s leading IT solution provider, focused on security, infrastructure, and cloud.",
+      "position": "Sales Engineer",
+      "url": "https://www.cdw.ca/content/cdwca/en/scalar-is-now-cdw-canada.html",
+      "endDate": "2014-06-01",
+      "startDate": "2008-06-01",
+      "summary": "Responsible for helping build North Americas largest F5 partner, including product sales, professional services, F5 Authorized Trainer, delivering customer presentations for sales as well as public speaking events. Over the course of the five years I delivered authorized F5 training classes including ASM, GTM, LTM, and APM classes to hundreds of customers.",
+      "highlights": [
+        "NetApp",
+        "VMWare",
+        "F5 Bigip",
+        "Certified F5 Trainer",
+        "Pre Sales",
+        "Professional Services",
+        "Customer facing speaking events",
+        "Technical demonstrations"
+      ]
+    },
+    {
+      "name": "Samuel Manutech Inc",
+      "location": "185 The West Mall, Toronto, ON M9C 5L5",
+      "description": "One of the largest and oldest steel producer in North America.",
+      "position": "Linux System Administrator",
+      "url": "https://www.samuel.com/",
+      "endDate": "2008-06-01",
+      "startDate": "2005-05-01",
+      "summary": "Building and consolidating multi-tenant data centers. Deploying F5 with Linux based email servers with Microsoft Exchange running on highly available VMware servers with NetApp storage. Working on a small team provided the opportunity to be involved in every aspect of datacenter management from facilities to operating systems, storage, networking and virtualization.",
+      "highlights": [
+        "NetApp",
+        "VMWare",
+        "F5 Bigip",
+        "Microsoft Exchange",
+        "Active Directory",
+        "Cisco VPN",
+        "Cisco Routers/Firewalls"
+      ]
+    },
+    {
+      "name": "Bullseye Post Production",
+      "location": "99 Atlantic Avenue, Toronto Canada",
+      "description": "One of the largest and oldest steel producer in North America.",
+      "position": "Render Farm Engineer",
+      "url": "https://www.bullseye.tv",
+      "endDate": "2005-10-01",
+      "startDate": "2005-05-01",
+      "summary": "Created a high performance rendering cluster based on Linux, development of automation pipelines for rendering high resolution video for use with feature length movies and television. Full Stack architecture of high performance fiber based networks complete with network architecture, operations and security.",
+      "highlights": [
+        "NAS",
+        "Maya Render",
+        "Houdini Render",
+        "Astaro Firewall"
+      ]
+    },
+    {
+      "name": "Primus Telecommunications",
+      "location": "5353 Dundas St W #5343, Toronto, ON M9B 6H8",
+      "description": "Global, facilities-based telecommunications service provider",
+      "position": "UNIX Administrator",
+      "url": "https://www.primus.ca",
+      "endDate": "2005-05-01",
+      "startDate": "2002-01-01",
+      "summary": "Responsible for architecting shared web hosting platforms, storage. Developing business continuity integrations for customers of acquired companies. During the time at Primus I participated in rolling out the first residential VOIP solution in Canada, as well as designing and building high performance, scalable, and highly available network and application infrastructure.",
+      "highlights": [
+        "NetApp",
+        "Linux",
+        "Oracle",
+        "LDAP",
+        "Shell Scripting",
+        "Perl programming",
+        "PHP programming"
+      ]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "Pony-Metal Orchestra",
+      "position": "Music Coach",
+      "url": "http://music.mordasiewicz.com/",
+      "startDate": "2012-01-01",
+      "endDate": "2013-01-01",
+      "summary": "Community music festival organizer for neighbourhood kids",
+      "highlights": [
+        ""
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "University of Ottawa",
+      "url": "https://www.uottawa.ca/en",
+      "area": "Information Technology",
+      "studyType": "Bachelor",
+      "startDate": "1992-06-01",
+      "endDate": "1995-04-01",
+      "score": "",
+      "courses": [
+        "DB1101 - Basic SQL",
+        "CS2011 - Java Introduction"
+      ]
+    }
+  ],
+  "awards": [
+    {
+      "title": "Solutions Engineer of the Year",
+      "date": "2020-11-01",
+      "awarder": "F5 Inc.",
+      "summary": ""
+    }
+  ],
+  "publications": [
+    {
+      "name": "Video compression for 3d media",
+      "publisher": "Hooli",
+      "releaseDate": "2014-10-01",
+      "url": "http://en.wikipedia.org/wiki/Silicon_Valley_(TV_series)",
+      "summary": "Innovative middle-out compression algorithm that changes the way we store data."
+    }
+  ],
+  "skills": [
+    {
+      "name": "Web Application Firewall and API Protection",
+      "level": "Master",
+      "keywords": [
+        "WAAP",
+        "WAF",
+        "API"
+      ]
+    },
+    {
+      "name": "Infrastructure as Code",
+      "level": "Master",
+      "keywords": [
+        "GitHub",
+        "Webhooks",
+        "Jenkins CE",
+        "ArgoCD",
+        "Kubernetes",
+        "JSON",
+        "Continous Integration Continuous Deployment"
+      ]
+    }
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Native speaker"
+    }
+  ],
+  "interests": [
+    {
+      "name": "Watersports",
+      "keywords": [
+        "kitesurfing",
+        "foilboarding"
+      ]
+    }
+  ],
+  "references": [
+    {
+      "name": "Brian ",
+      "reference": "It is my pleasure to recommend Richard, his performance working as a consultant for Main St. Company proved that he will be a valuable addition to any company."
+    }
+  ],
+  "projects": [
+    {
+      "name": "Miss Direction",
+      "description": "A mapping engine that misguides you",
+      "highlights": [
+        "Won award at AIHacks 2016",
+        "Built by all women team of newbie programmers",
+        "Using modern technologies such as GoogleMaps, Chrome Extension and Javascript"
+      ],
+      "keywords": [
+        "GoogleMaps",
+        "Chrome Extension",
+        "Javascript"
+      ],
+      "startDate": "2016-08-24",
+      "endDate": "2016-08-24",
+      "url": "missdirection.mordasiewicz.com",
+      "roles": [
+        "Team lead",
+        "Designer"
+      ],
+      "entity": "Smoogle",
+      "type": "application"
+    }
+  ],
+  "meta": {
+    "canonical": "https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json",
+    "version": "v1.0.0",
+    "lastModified": "2023-05-05T14:57:00",
+    "theme": "elegant"
+  }
+}
