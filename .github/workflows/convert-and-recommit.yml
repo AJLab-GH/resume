@@ -32,14 +32,18 @@ jobs:
 
       - name: Generate Resumes
         run: |
+          export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
+          export PUPPETEER_EXECUTABLE_PATH=$(which chromium-browser)
+          export PUPPETEER_ARGS="--no-sandbox --disable-setuid-sandbox"
+          
           mkdir -p outputs/pdf outputs/html
           jq -r 'keys[]' themes.json | while read i; do
             echo "Installing theme: jsonresume-theme-${i}"
             npm install jsonresume-theme-${i}
-
+            
             echo "Exporting PDF resume with theme: jsonresume-theme-${i}"
-            npx resume export outputs/pdf/Robin-Mordasiewicz-${i}.pdf --theme jsonresume-theme-${i} --format pdf --no-sandbox resume.json
-
+            npx resume export outputs/pdf/Robin-Mordasiewicz-${i}.pdf --theme jsonresume-theme-${i} --format pdf resume.json
+            
             echo "Exporting HTML resume with theme: jsonresume-theme-${i}"
             npx resume export outputs/html/Robin-Mordasiewicz-${i}.html --theme jsonresume-theme-${i} --format html resume.json
           done
