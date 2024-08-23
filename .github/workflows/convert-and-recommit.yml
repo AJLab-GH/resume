@@ -42,10 +42,10 @@ jobs:
             npm install jsonresume-theme-${i}
             
             echo "Exporting PDF resume with theme: jsonresume-theme-${i}"
-            npx resume export outputs/pdf/Robin-Mordasiewicz-${i}.pdf --theme jsonresume-theme-${i} --format pdf resume.json
+            npx resume export outputs/pdf/Alexandre-Jammes-${i}.pdf --theme jsonresume-theme-${i} --format pdf resume.json
             
             echo "Exporting HTML resume with theme: jsonresume-theme-${i}"
-            npx resume export outputs/html/Robin-Mordasiewicz-${i}.html --theme jsonresume-theme-${i} --format html resume.json
+            npx resume export outputs/html/Alexandre-Jammes-${i}.html --theme jsonresume-theme-${i} --format html resume.json
           done
 
       - name: Configure Git
