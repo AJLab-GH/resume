@@ -1,0 +1,1007 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimal-ui">
+
+		<title>Alexandre Jammes's Resume</title>
+		<link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,700" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300,600" rel="stylesheet" type="text/css">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+		<style>
+			body, html {
+  padding-top:2.5em;
+  margin:0;
+  background-color:#fafafa;
+  font-size: 13pt;
+  font-family: "Open Sans";
+}
+
+h2{
+  font-weight: normal;
+  margin: 0.5em;
+  margin-bottom: 0.2em;
+}
+
+h3{
+  font-weight:300;
+  font-size:1em;
+  margin: 0em;
+}
+
+.note {
+  display:block;
+  position: absolute;
+  top:10px;
+  left:10px;
+
+  font-size: 0.6em;
+}
+
+.summary p{
+  font-size:0.7em;
+  font-weight:400;
+
+  color: #424242;
+
+  margin-left:2em;
+}
+
+.new {
+  background-color: #81C784;
+
+  border: 1px solid #757575;
+  padding: 1px;
+  border-radius: 4px;
+}
+
+/* Header */
+
+header {
+  width:100%;
+  vertical-align: middle;
+  text-align: center;
+  font-family: "Merriweather";
+}
+
+.header-content {
+  display: inline-block;
+}
+
+.pic {
+  margin-top:-3em;
+
+  border-radius:10em;
+
+  border: 2px solid #dddddd;
+  cursor:pointer;
+}
+
+@keyframes intro {
+  from {
+    height:0em;
+  }
+
+  to {
+    height: 6em;
+  }
+}
+
+.pic{
+  height: 6em;
+  transition: .3s;
+}
+
+.pic:hover{
+  transform: translateY(20px) scale(2);
+}
+
+.pic:hover ~ .content-wrapper{
+  transform: translateY(75px);
+}
+
+header p {
+  text-align:center;
+
+  margin:0;
+
+  color: #212121;
+}
+
+.first-name {
+   font-size: 1.05em;
+}
+
+.subtitle {
+  font-family: "Merriweather";
+  font-size:0.7em;
+  font-weight:500;
+  color: #424242;
+}
+
+/* Information */
+
+.paper {
+  margin: 0 auto;
+  margin-bottom:1em;
+
+  background-color:white;
+  width:60%;
+
+  padding:0.5em 0 0.5em 0;
+
+  border-top: 1px solid #dddddd;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+  border-bottom: 3px solid #dddddd;
+  border-radius: 3px;
+
+  text-align: center;
+}
+
+/* Content Part */
+
+.content-wrapper {
+  padding-right: 7.25%;
+  padding-left: 7.25%;
+  transition: .3s;
+  padding-bottom: 20px;
+
+  text-align: left;
+}
+
+.content {
+  display:table;
+  width:100%;
+
+  padding-top:1.5em;
+
+  /*border-top: 1px solid #eeeeee;*/
+}
+
+
+.work-listing .first-listing{
+  margin-top: 1.8em;
+}
+
+.content:last-child {
+  margin-bottom: 2em;
+}
+
+body > div > article > div > section:last-child {
+  padding-bottom:1.5em;
+}
+
+.row {
+    display:table-row;
+}
+
+.row div {
+    display:table-cell;
+}
+
+.content-cat {
+  text-align:center;
+  vertical-align:middle;
+  font-variant:small-caps;
+
+  letter-spacing: 1px;
+
+  color: #212121;
+
+  font-family: "Merriweather";
+
+  width:25%;
+}
+
+.content-cat p {
+  font-size:0.55em;
+  font-weight:600;
+
+  margin-bottom:0;
+}
+
+.content-text {
+  border-left:1px solid #dddddd;
+  transition: border 0.66s ease-in;
+}
+
+.big-text {
+  vertical-align:top;
+}
+
+.content-text ul {
+  padding:0;
+  margin:0;
+  margin-top:0.15em;
+
+  width:85%;
+  margin-left:1.5em;
+}
+
+.content-text ul:last-child {
+  margin-bottom:0.5em;
+}
+
+.content-text ul li {
+  font-size:0.7em;
+
+  display:inline-block;
+
+}
+
+.content-text ul li:first-child {
+  width:35%;
+
+  color: #424242;
+
+  font-weight:600;
+}
+
+.content-text ul li a:hover {
+  color:#4fc3f7;
+}
+
+.work-listing p {
+  font-size:0.7em;
+
+  color: #424242;
+
+  margin-left:2em;
+  margin-top:0.45em;
+  margin-bottom: 0.45em;
+}
+
+div.content-text.work-listing.education-listing > p:nth-child(2) {
+  margin-top:0.25em;
+}
+
+.work-listing .highlight {
+  font-size:0.7em;
+  font-weight:400;
+
+  color: #424242;
+
+  margin-left:3.25em;
+  padding-left:0.5em;
+
+  border-left:1px solid #dddddd;
+}
+
+.assignment {
+  border-left: 1px solid #dddddd;
+}
+
+.education-listing > .heading {
+  font-weight:600;
+
+  margin-top:0.75em;
+  margin-left:2em;
+}
+
+.education-listing > .highlight {
+  margin-left:3.25em;
+}
+
+.highlight {
+  transition: border .33s ease-in;
+}
+
+.profiles-print{
+  display: none;
+}
+
+.profiles-listing ul li, .profiles-listing ul li:first-child {
+  width:24%;
+  font-weight: normal;
+}
+
+.work-content, .education-content {
+  padding-top: .75em;
+}
+
+div.content-text.skills-listing > p {
+  font-size:0.7em;
+  font-weight:400;
+
+  margin-left: 2em;
+  margin-top: 0.45em;
+  margin-bottom: 0.45em;
+}
+
+.no-nl{
+  display: inline-block;
+}
+
+.margin-left {
+  margin-left: 10px;
+}
+
+a{
+  text-decoration: none;
+  color: #0277bd;
+}
+
+.fa{
+  color: #000;
+}
+
+.network{
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: -0.7em;
+}
+
+@media(max-width:1400px) {
+  .paper {
+    width:80%;
+  }
+
+  .content-cat{
+    padding-left:2%;
+  }
+
+  .content-wrapper{
+    padding-right: 2%;
+  }
+}
+
+		</style>
+
+		<style media="screen">
+			@media(max-width:795px) {
+  .paper {
+    width:96%;
+  }
+
+  .pic{
+    cursor: auto;
+  }
+
+  .content-cat{
+    padding-left:1%;
+  }
+
+  .content-wrapper{
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+
+  .profiles-listing ul li, .profiles-listing ul li:first-child{
+    width: 49%;
+  }
+
+  .small-fullwidth-row{
+    display: block;
+  }
+
+  .small-fullwidth-row div{
+    display: block;
+    width:100%;
+  }
+
+  .small-fullwidth-row .content-text{
+    border-left: 2px solid #dddddd;
+  }
+
+  .small-center{
+    text-align: center;
+  }
+
+  .work-listing .first-listing{
+    margin-top: 0.45em;
+  }
+
+  .work-listing .small-center{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .top-content h3{
+    width: 100px;
+  }
+}
+
+		</style>
+
+		<style media="print">
+			
+body, html {
+  background-color: white;
+  padding-top: 1.5em;
+  font-size:12pt;
+  font-family: "Merriweather";
+}
+
+a{
+  text-decoration: none;
+  color: #000;
+}
+
+h2{
+  margin-top:0em;
+}
+
+.paper {
+  width:100%;
+  border: 0;
+
+  padding-top: 0;
+}
+
+header p {
+  font-size: 1.3em;
+}
+
+.subtitle {
+  font-size: 0.7em;
+}
+
+.header-pic {
+  float:left;
+}
+
+.pic{
+  height:4.2em;
+  width:4.2em;
+
+  transform: translate(-8em, 1.9em);
+}
+
+.profiles {
+  display:none;
+}
+
+.profiles-print{
+  display: table;
+}
+
+.content {
+  page-break-inside:avoid;
+  page-break-after:auto;
+}
+
+.header-text {
+  float:left;
+  margin-top: -1.6em;
+}
+
+.content-wrapper > .content:first-child {
+  padding-top: 2em;
+}
+
+.content:last-child {
+  padding-bottom: 0;
+}
+
+.content-cat {
+  width:25%;
+  position: relative;
+  right: 4%;
+  color:black;
+}
+
+.content-cat p {
+  font-size:0.5em;
+  font-weight: 600;
+}
+
+header p, .content-text, .work-listing p, .content-text ul li:first-child, .work-listing .highlight, .content-text.skills-listing > ul > li > .highlight {
+  color:black;
+}
+
+.content-text.skills-listing > ul > li span, .subtitle {
+  color:#212121;
+}
+
+.content-text ul:last-child {
+  margin-bottom: 0.25em;
+}
+
+.content-text ul li:first-child {
+  width:50%;
+}
+
+.profiles-listing ul li:first-child {
+  width:32%;
+}
+
+div.content-text.skills-listing > ul > li {
+  width:33%;
+}
+
+.work-listing p {
+  margin-bottom: 0.1em;
+}
+
+div.content-text.skills-listing > ul > li > p {
+  margin-top: 0.4em;
+  margin-bottom: 0.5em;
+}
+
+div.content-text.skills-listing > ul > li {
+  padding-left: 1.5em;
+}
+
+div.content-text.skills-listing > ul > li:first-child {
+  padding-left: 2em;
+}
+
+.note {
+  display:none;
+}
+
+.content-text:hover {
+  border-left:1px solid #eeeeee;
+}
+
+.content-text ul li a:hover {
+  color:#4fc3f7;
+}
+
+.summary p{
+  color: black;
+}
+
+.highlight:hover, .content-text.skills-listing > ul > li > .highlight:hover {
+  border-left:1px solid #eeeeee;
+}
+
+.big-text {
+  padding-top: 0;
+}
+
+		</style>
+	</head>
+	<body>
+		<div class="resume-wrapper">
+			<article class="paper">
+					<div class="content-wrapper">
+						<header>
+							<div class="header-content">
+								<div class="header-text">
+									<h2>Alexandre Jammes</h2>
+									<p class="subtitle">Cloud Architect</p>
+								</div>
+							</div>
+						</header>
+						<!-- CONTACT -->
+						<section class="content top-content">
+							<div class="row">
+								<div class="content-cat">
+								 <h3>Contact</h3>
+								</div>
+								<div class="content-text">
+										<ul>
+											<li>Email</li>
+											<li><a href="mailto:ajammes.ftnt@gmail.com">ajammes.ftnt@gmail.com</a></li>
+										</ul>
+
+										<ul>
+											<li>Phone</li>
+											<li>(613) 889-6564</li>
+										</ul>
+
+								</div>
+							</div>
+						</section>
+
+						<!-- LOCATION -->
+								<section class="content top-content">
+									<div class="row">
+										<div class="content-cat">
+										 <h3>Location</h3>
+										</div>
+										<div class="content-text">
+
+
+												<ul>
+													<li>Country</li>
+													<li>Canada</li>
+												</ul>
+
+												<ul>
+													<li>City</li>
+													<li>Toronto</li>
+												</ul>
+
+												<ul>
+													<li>Region</li>
+													<li>Ontario</li>
+												</ul>
+
+										</div>
+									</div>
+								</section>
+
+
+						<!-- LANGUAGE -->
+						<section class="content top-content">
+							<div class="row">
+								<div class="content-cat">
+								 <h3>Languages</h3>
+								</div>
+								<div class="content-text">
+
+										<ul>
+
+												<li>English</li>
+
+											<li>Native speaker</li>
+
+										</ul>
+
+								</div>
+							</div>
+						</section>
+
+						<!-- PROFILES for website-->
+							<section class="content profiles top-content">
+								<div class="row">
+									<div class="content-cat">
+									 <h3>Profiles</h3>
+									</div>
+									<div class="content-text profiles-listing">
+										<ul>
+													<li>
+													<a href="https://www.linkedin.com/in/robin-mordasiewicz/" target="_blank">
+														<i class="fa fa-2x fa-linkedin-square"></i>
+														<span class="network">LinkedIn</span>
+													</a>
+													</li>
+													<li>
+													<a href="https://www.facebook.com/robin.mordasiewicz" target="_blank">
+														<i class="fa fa-2x fa-facebook-square"></i>
+														<span class="network">Facebook</span>
+													</a>
+													</li>
+													<li>
+													<a href="https://www.youtube.com/channel/UCc2rQTQp22P2WEhCArzlUoQ" target="_blank">
+														<i class="fa fa-2x fa-youtube-square"></i>
+														<span class="network">YouTube</span>
+													</a>
+													</li>
+													<li>
+													<a href="https://github.com/robinmordasiewicz" target="_blank">
+														<i class="fa fa-2x fa-github-square"></i>
+														<span class="network">GitHub</span>
+													</a>
+													</li>
+										</ul>
+									</div>
+								</div>
+							</section>
+						<!-- PROFILES for print -->
+							<section class="content profiles-print">
+								<div class="row">
+									<div class="content-cat">
+									 <h3>Profiles</h3>
+									</div>
+									<div class="content-text">
+											<ul>
+												<li>LinkedIn</li>
+												<li><a href="https://www.linkedin.com/in/robin-mordasiewicz/">linkedin.com/in/robin-mordasiewicz/</a></li>
+											</ul>
+											<ul>
+												<li>Facebook</li>
+												<li><a href="https://www.facebook.com/robin.mordasiewicz">facebook.com/robin.mordasiewicz</a></li>
+											</ul>
+											<ul>
+												<li>YouTube</li>
+												<li><a href="https://www.youtube.com/channel/UCc2rQTQp22P2WEhCArzlUoQ">youtube.com/channel/UCc2rQTQp22P2WEhCArzlUoQ</a></li>
+											</ul>
+											<ul>
+												<li>GitHub</li>
+												<li><a href="https://github.com/robinmordasiewicz">github.com/robinmordasiewicz</a></li>
+											</ul>
+									</div>
+								</div>
+							</section>
+
+							<section class="content summary">
+								<div class="row small-fullwidth-row">
+									<div class="content-cat">
+									 <h3>About Me</h3>
+									</div>
+									<div class="content-text work-content">
+										<p>
+											Senior Cloud Solutions Architect focused on all aspects of Cloud Security.
+										</p>
+									</div>
+								</div>
+							</section>
+
+								<section class="content">
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+											<h3>Work	Experience</h3>
+
+											<p><span class="no-nl">2021-05-01</span> to <span class="no-nl">2023-05-01</span></p>
+
+								</div>
+								<div class="content-text work-listing education-listing">
+
+											<p>Solution selling, focusing on F5 Distributed Cloud, positioning multi-cloud networking, application security and kubernetes based pipelines. In the SME overlay role I was responsible for account discovery, product presentations, demonstrations, and proof of concept, including automation with terraform across multiple clouds with on-prem datacenters. In the cloud overlay team I was responsible for architecting CICD pipeline integrations including github-actions, docker containers, argocd, jenkins, nginx ingress controller. Cloud based Web Application Firewalls, API protections, and networking application delivery with GSLB as well as anycast architectures.</p>
+
+												<p class="highlight">Covering financial services in North America</p>
+												<p class="highlight">Multi Cloud Networking</p>
+												<p class="highlight">Cloud Automation with Terraform</p>
+												<p class="highlight">Web App and API Protection</p>
+
+								</div>
+							</div>
+						</section>
+								<section class="content work-content">
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+
+											<p><span class="no-nl">2020-07-01</span> to <span class="no-nl">2021-05-01</span></p>
+
+								</div>
+								<div class="content-text work-listing education-listing">
+
+											<p>Authoring, and publishing technical documentation supporting service providers technology in OpenShift.</p>
+
+												<p class="highlight">Authoring Technical Documentation</p>
+												<p class="highlight">Content As Code</p>
+												<p class="highlight">Restructured Text</p>
+												<p class="highlight">Containerized Content Publishing</p>
+
+								</div>
+							</div>
+						</section>
+								<section class="content work-content">
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+
+											<p><span class="no-nl">2018-07-01</span> to <span class="no-nl">2020-07-01</span></p>
+
+								</div>
+								<div class="content-text work-listing education-listing">
+
+											<p>Working with large enterprise customers in the Greater Toronto Area to help architect hybrid cloud architecture using F5 technology. Team collaboration, presenting technical labs and product demonstration in online webinar format as well as large in-person group events.</p>
+
+												<p class="highlight">Enterprise Commercial</p>
+												<p class="highlight">Hybrid Cloud Architecture</p>
+												<p class="highlight">Devops</p>
+												<p class="highlight">Automation with Ansible</p>
+												<p class="highlight">Web Appplication Firewall</p>
+												<p class="highlight">VPN</p>
+												<p class="highlight">iRules</p>
+
+								</div>
+							</div>
+						</section>
+								<section class="content work-content">
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+
+											<p><span class="no-nl">2014-06-01</span> to <span class="no-nl">2018-07-01</span></p>
+
+								</div>
+								<div class="content-text work-listing education-listing">
+
+											<p>Solution selling for Canadian Service Providers I have experience with carrier grade firewalls, wireline services, web application firewalls, and application delivery at scale. Architecting carrier-grade-NAT for mobility networks, architecting inspection platform enabling multi-vendor security chains including DLP/NGWF/IDS for connected car, connected city, and large IoT networks. Deploying massive distributed VPN platforms.</p>
+
+												<p class="highlight">Service Providers</p>
+												<p class="highlight">CGNAT</p>
+												<p class="highlight">IoT Security Chaining</p>
+												<p class="highlight">OpenStack</p>
+												<p class="highlight">OpenShift</p>
+												<p class="highlight">Web Appplication Firewall</p>
+												<p class="highlight">DLP</p>
+
+								</div>
+							</div>
+						</section>
+								<section class="content work-content">
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+
+											<p><span class="no-nl">2008-06-01</span> to <span class="no-nl">2014-06-01</span></p>
+
+								</div>
+								<div class="content-text work-listing education-listing">
+
+											<p>Responsible for helping build North Americas largest F5 partner, including product sales, professional services, F5 Authorized Trainer, delivering customer presentations for sales as well as public speaking events. Over the course of the five years I delivered authorized F5 training classes including ASM, GTM, LTM, and APM classes to hundreds of customers.</p>
+
+												<p class="highlight">NetApp</p>
+												<p class="highlight">VMWare</p>
+												<p class="highlight">F5 Bigip</p>
+												<p class="highlight">Certified F5 Trainer</p>
+												<p class="highlight">Pre Sales</p>
+												<p class="highlight">Professional Services</p>
+												<p class="highlight">Customer facing speaking events</p>
+												<p class="highlight">Technical demonstrations</p>
+
+								</div>
+							</div>
+						</section>
+								<section class="content work-content">
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+
+											<p><span class="no-nl">2005-05-01</span> to <span class="no-nl">2008-06-01</span></p>
+
+								</div>
+								<div class="content-text work-listing education-listing">
+
+											<p>Building and consolidating multi-tenant data centers. Deploying F5 with Linux based email servers with Microsoft Exchange running on highly available VMware servers with NetApp storage. Working on a small team provided the opportunity to be involved in every aspect of datacenter management from facilities to operating systems, storage, networking and virtualization.</p>
+
+												<p class="highlight">NetApp</p>
+												<p class="highlight">VMWare</p>
+												<p class="highlight">F5 Bigip</p>
+												<p class="highlight">Microsoft Exchange</p>
+												<p class="highlight">Active Directory</p>
+												<p class="highlight">Cisco VPN</p>
+												<p class="highlight">Cisco Routers/Firewalls</p>
+
+								</div>
+							</div>
+						</section>
+								<section class="content work-content">
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+
+											<p><span class="no-nl">2005-05-01</span> to <span class="no-nl">2005-10-01</span></p>
+
+								</div>
+								<div class="content-text work-listing education-listing">
+
+											<p>Created a high performance rendering cluster based on Linux, development of automation pipelines for rendering high resolution video for use with feature length movies and television. Full Stack architecture of high performance fiber based networks complete with network architecture, operations and security.</p>
+
+												<p class="highlight">NAS</p>
+												<p class="highlight">Maya Render</p>
+												<p class="highlight">Houdini Render</p>
+												<p class="highlight">Astaro Firewall</p>
+
+								</div>
+							</div>
+						</section>
+								<section class="content work-content">
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+
+											<p><span class="no-nl">2002-01-01</span> to <span class="no-nl">2005-05-01</span></p>
+
+								</div>
+								<div class="content-text work-listing education-listing">
+
+											<p>Responsible for architecting shared web hosting platforms, storage. Developing business continuity integrations for customers of acquired companies. During the time at Primus I participated in rolling out the first residential VOIP solution in Canada, as well as designing and building high performance, scalable, and highly available network and application infrastructure.</p>
+
+												<p class="highlight">NetApp</p>
+												<p class="highlight">Linux</p>
+												<p class="highlight">Oracle</p>
+												<p class="highlight">LDAP</p>
+												<p class="highlight">Shell Scripting</p>
+												<p class="highlight">Perl programming</p>
+												<p class="highlight">PHP programming</p>
+
+								</div>
+							</div>
+						</section>
+
+
+								<section class="content">
+								<div class="row">
+									<div class="content-cat big-text">
+
+											<h3>Education</h3>
+
+												<p><span class="no-nl">1992-06-01</span> to <span class="no-nl">1995-04-01</span></p>
+
+									</div>
+									<div class="content-text work-listing education-listing">
+												<p class="heading first-listing">University of Ottawa</p>
+
+											<p class="highlight">
+												Bachelor:
+											<i>Information Technology</i>
+											</p>
+
+									</div>
+								</div>
+							</section>
+
+							<section class="content">
+								<div class="row">
+									<div class="content-cat big-text">
+											<h3>Awards</h3>
+
+											<p>Solutions Engineer of the Year</p>
+
+											<p style="margin-top:0.25em;">2020-11-01</p>
+
+									</div>
+									<div class="content-text work-listing">
+
+									 		<strong><p class="heading">F5 Inc.</p></strong>
+
+									</div>
+								</div>
+							</section>
+
+
+
+
+								<section class="content">
+							<div class="row small-fullwidth-row">
+								<div class="content-cat big-text">
+											<h3>Volunteer work</h3>
+
+											<p><span class="no-nl">2012-01-01</span> to <span class="no-nl">2013-01-01</span></p>
+
+								</div>
+								<div class="content-text work-listing education-listing">
+											<p class="first-listing small-center">
+													<strong>Music Coach</strong> <span class="no-nl">at <strong>Pony-Metal Orchestra</strong></span>
+											</p>
+
+											<p>Community music festival organizer for neighbourhood kids</p>
+
+												<p class="highlight"></p>
+
+
+								</div>
+							</div>
+						</section>
+
+
+						<section class="content">
+							<div class="row">
+								<div class="content-cat">
+									<h3>Skills</h3>
+								</div>
+								<div class="content-text skills-listing">
+										<p>
+										<span class="name">
+											<strong>
+											Web Application Firewall and API Protection
+
+											</strong>
+										</span>
+
+											<span>(Master):</span>
+
+												WAAP, WAF, API
+										</p>
+										<p>
+										<span class="name">
+											<strong>
+											Infrastructure as Code
+
+											</strong>
+										</span>
+
+											<span>(Master):</span>
+
+												GitHub, Webhooks, Jenkins CE, ArgoCD, Kubernetes, JSON, Continous Integration Continuous Deployment
+										</p>
+								</div>
+							</div>
+						</section>
+
+						<section class="content">
+							<div class="row">
+								<div class="content-cat">
+									<h3>Interests</h3>
+								</div>
+								<div class="content-text skills-listing">
+										<p>
+										<span class="name">
+											<strong>
+												Watersports:
+											</strong>
+										</span>
+												kitesurfing, foilboarding
+										</p>
+								</div>
+							</div>
+						</section>
+				</div>
+			</article>
+		</div>
+	</body>
+</html>
