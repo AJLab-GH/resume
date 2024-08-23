@@ -37,15 +37,15 @@ jobs:
           export PUPPETEER_ARGS="--no-sandbox --disable-setuid-sandbox"
           
           mkdir -p outputs/pdf outputs/html
-          jq -r 'keys[]' themes.json | while read i; do
+          jq -r 'keys[]' source/themes.json | while read i; do
             echo "Installing theme: jsonresume-theme-${i}"
             npm install jsonresume-theme-${i}
             
             echo "Exporting PDF resume with theme: jsonresume-theme-${i}"
-            npx resume export outputs/pdf/Alexandre-Jammes-${i}.pdf --theme jsonresume-theme-${i} --format pdf resume.json
+            npx resume export outputs/pdf/Alexandre-Jammes-${i}.pdf --theme jsonresume-theme-${i} --format pdf source/resume.json
             
             echo "Exporting HTML resume with theme: jsonresume-theme-${i}"
-            npx resume export outputs/html/Alexandre-Jammes-${i}.html --theme jsonresume-theme-${i} --format html resume.json
+            npx resume export outputs/html/Alexandre-Jammes-${i}.html --theme jsonresume-theme-${i} --format html source/resume.json
           done
 
       - name: Configure Git
