@@ -1,6 +1,6 @@
-# Resume Automation Repository
+# Resume
 
-Welcome to the **Resume Automation Repository**! This project automates the process of generating polished, themed PDF resumes using structured data from `resume.json`. The entire workflow is driven by GitHub Actions, ensuring that your resumes are always up-to-date with minimal manual effort.
+Welcome to the **Resume** Repository! This project automates the process of generating polished, themed PDF resumes using structured data from `resume.json`. The entire workflow is driven by GitHub Actions, ensuring that your resumes are always up-to-date with minimal manual effort.
 
 ## Overview
 
@@ -16,6 +16,28 @@ This repository leverages the power of GitHub Actions to build multiple PDF resu
    - Commits the generated resumes back to the `main` branch, neatly organized in the `outputs/pdf` and `outputs/html` folders.
 
 3. **Collaboration Made Simple**: This setup allows collaborators to focus solely on updating `resume.json`. There's no need to worry about the underlying automation, making it easier for anyone to contribute without needing in-depth knowledge of the build process.
+
+## Security Considerations: Moving `doit.sh` to GitHub Actions
+
+Initially, the `doit.sh` script was used to automate the process of generating resumes. However, the libraries used by the script, including Puppeteer, posed certain security risks:
+
+- **Insecure Dependencies**: Some of the libraries used in the script had vulnerabilities that could compromise the security of the system running the script. These outdated libraries needed constant attention to keep them secure.
+  
+- **Puppeteer and `--no-sandbox` Flag**: Puppeteer, a tool used for generating PDF files, required the `--no-sandbox` flag to run in certain environments like Docker or CI/CD pipelines. While this flag allows Puppeteer to run in restricted environments, it also disables some security features, making it less safe.
+
+### Why Move the Script to GitHub Actions?
+
+Given these security concerns, we decided to move the logic of `doit.sh` directly into a GitHub Action workflow. This approach offers several advantages:
+
+- **Safer Execution Environment**: By running the script in GitHub Actions, we leverage a secure, isolated environment provided by GitHub. This reduces the risk of exposing insecure dependencies on local machines or servers.
+  
+- **Automated Dependency Management**: GitHub Actions automatically handles the setup and installation of dependencies each time the workflow runs. This ensures that the latest, most secure versions of libraries are used without requiring manual updates.
+  
+- **Centralized Workflow**: Moving the script into the GitHub Action centralizes the automation, making it easier to manage and audit. All logic is contained within the workflow file, reducing the complexity and improving maintainability.
+
+### The Safer, Modern Approach
+
+By integrating the `doit.sh` logic into the GitHub Action, we not only improve security but also streamline the automation process. This modern approach ensures that your resumes are generated in a safe, controlled environment with the latest tools, reducing the risk of vulnerabilities and simplifying the overall workflow.
 
 ## Getting Started
 
@@ -40,4 +62,3 @@ Contributions are welcome! If you have suggestions for improving the workflow, a
 ## License
 
 This project is open-source and available under the [MIT License](LICENSE).
-
