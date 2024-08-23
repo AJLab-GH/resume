@@ -44,7 +44,7 @@ By integrating the `doit.sh` logic into the GitHub Action, we not only improve s
 To make the most of this repository, you'll need to ensure that GitHub Actions has the necessary permissions:
 
 1. **Read/Write Access**: GitHub Actions must have read and write access to your repository. This is crucial for committing the generated resumes back to the repository.
-   
+
 2. **PR Creation**: Enable GitHub Actions to create pull requests (PRs) if you prefer to review changes before merging them into the `main` branch.
 
 ## Why This Approach?
